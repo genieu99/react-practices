@@ -13,7 +13,7 @@ $ npm init -y
 
 <2> Install Packages
 1. 개발툴
-$ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader sass-loader node-sass
+$ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader sass-loader sass
 
 2. React 라이브러리
 $ npm i react react-dom
