@@ -1,7 +1,7 @@
 {
-  "name": "ex06",
+  "name": "ex07",
   "version": "1.0.0",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "scripts": {
     "start": "npx webpack serve  --progress",
     "build": "npx webpack"
