@@ -4,12 +4,10 @@ import Clock from './Clock';
 
 export default function App() {
     return(
-        <>
-            <Clock
-                title={`ex05: Clock Component II: 0`}
-                hours={12}
-                minutes={0}
-                seconds={0} />
-        </>
+        <Clock
+            title={`ex05: Clock Component II: 0`}
+            hours={12}
+            minutes={0}
+            seconds={0} />
     );    
 }
