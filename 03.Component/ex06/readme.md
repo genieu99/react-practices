@@ -19,6 +19,12 @@
 this.state.emails = [{}, {}, {}];
 let emails = this.state.emails;
 emails.push({});
+
+const [emails, setEmails] = useState([{}, {}, {}]);
+
+newObj = {};
+emails.push(newObj);
+setEmails(emails);
 ```
 
 ### How I:
