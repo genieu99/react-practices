@@ -10,6 +10,10 @@
 
 ## intellij
 **/.idea
+**/**/.settings
+**/**/target
+**/**/.classpath
+**/**/.project
 
 ## npm
 **/node_modules
