@@ -32,11 +32,11 @@
     padding-top: 2px;
   }
 
-  &:before {
+  & a:before {
     content:'X'
   }
 
-  &:hover, &:visited, &:active {
+  & a:hover, & a:visited, & a:active {
     text-decoration: none;
     color: #fff;
   }
