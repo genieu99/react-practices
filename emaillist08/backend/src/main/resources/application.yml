@@ -25,6 +25,10 @@ spring:
       mode: HTML
       prefix: classpath:templates/      	  
       suffix : .html
+
+mybatis:
+   config-location: classpath:mybatis/configuration.xml
+
       
 
 server:
@@ -54,7 +58,16 @@ spring:
          enabled: true
 
    thymeleaf:
-      cache: false     
+      cache: false   
+      
+   datasource:
+      driver-class-name: org.mariadb.jdbc.Driver
+      url: jdbc:mariadb://192.168.64.3:3306/webdb?charset=utf8
+      username: webdb
+      password: webdb
+      hikari:
+         minimum-idle: 10
+         maximum-pool-size: 20  
  
 server:
    port: 8080
@@ -76,7 +89,16 @@ spring:
          on-profile: production
 
    thymeleaf:
-      cache: true         
+      cache: true    
+   
+   datasource:
+      driver-class-name: org.mariadb.jdbc.Driver
+      url: jdbc:mariadb://192.168.64.3:3306/webdb?charset=utf8
+      username: webdb
+      password: webdb
+      hikari:
+         minimum-idle: 10
+         maximum-pool-size: 20     
 
 server:
    port: 8083
