@@ -1,13 +1,13 @@
-.Card_List{
-  position: relative;
-  list-style-type: none;
-  display: inline-block;
-  vertical-align: top;
-  white-space: normal;
-  height: 100%;
-  width: 33%;
-  padding: 0 20px;
-  overflow: auto;
+.Card_List {
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    height: 100%;
+    width: 33%;
+    padding: 0 20px;
+    overflow: auto;
 
   &:not(:last-child):after {
     content: '';

@@ -1,4 +1,4 @@
-._Card {
+.Card {
   position: relative;
   z-index: 1;
   background: #fff;
@@ -20,8 +20,10 @@
     width: 1em;
     content: '▸';
   }
+}
 
-  &_Open:before {
+.Card_Title_open {
+  &:before {
     content: '▾';
   }
 }
