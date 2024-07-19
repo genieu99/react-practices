@@ -1,11 +1,27 @@
-._Task:first-child  {
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: dashed 1px #ddd;
-}
+:global(#App) {
+  .Task_List {
+    ul {
+      list-style-type: none;
+    }
 
-.Task_Remove:after  {
-  display: inline-block;
-  color: #d66;
-  content: '✖';
+    .Input_Add_Task {
+      border: 1px dashed #bbb;
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 3px;
+    }
+  }
+
+  ._Task:first-child {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: dashed 1px #ddd;
+  }
+
+  .Task_Remove:after {
+    display: inline-block;
+    color: #d66;
+    content: '✖';
+  }
 }
