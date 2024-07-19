@@ -1,7 +1,14 @@
 import React from 'react';
 import * as styles from '../../assets/scss/component/About.scss';
+import {useNavigate} from "react-router";
 
 export default function About() {
+    const navigate = useNavigate();
+
+    setTimeout(() => {
+        // window.location.href = '/error';
+        navigate('/error');
+    }, 2000);
 
     return (
             <div className={styles.About}>
