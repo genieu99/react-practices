@@ -47,6 +47,8 @@ function Card ({no, title, description}) {
                 body: `done=${done}`
             });
 
+            console.log(response);
+
             if (!response.ok) {
                 throw new Error("Network response was not ok");
             }
