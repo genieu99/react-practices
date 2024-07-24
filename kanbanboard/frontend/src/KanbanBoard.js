@@ -7,7 +7,7 @@ const KanbanBoard = () => {
     return (
         <div id="root">
             <div className={Kanban_Board}>
-                 <CardList cards={data.filter(e => e.status === 'ToDo')} title={"To Do"} />
+                <CardList cards={data.filter(e => e.status === 'ToDo')} title={"To Do"} />
                 <CardList cards={data.filter(e => e.status === 'Doing')} title={"Doing"} />
                 <CardList cards={data.filter(e => e.status === 'Done')} title={"Done"} />
             </div>
