@@ -35,7 +35,9 @@ public class TaskController {
 
     @PutMapping("/{no}")
     public JsonResult update(@PathVariable(value = "no") Long taskNo, String done) {
+    	System.out.println(done);
         TaskVo updateTask = taskService.updateTask(taskNo, done);
+        System.out.println(updateTask.getDone());
         return JsonResult.success(updateTask);
     }
 

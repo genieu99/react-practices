@@ -25,6 +25,7 @@ public class TaskRepository {
 	}
 
 	public TaskVo updateTaskStatus(Long taskNo, String done) {
+		
 		sqlSession.update("task.updateTaskStatus", Map.of("taskNo", taskNo, "done", done));
 		return sqlSession.selectOne("task.findByTaskNo", taskNo);
 	}
